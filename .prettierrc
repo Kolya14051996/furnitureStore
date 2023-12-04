@@ -1,0 +1,4 @@
+{
+  "files": "*.html",
+  "htmlWhitespaceSensitivity": "ignore"
+}

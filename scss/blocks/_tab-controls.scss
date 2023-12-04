@@ -1,0 +1,40 @@
+.tab-controls {
+  display: inline-flex;
+  padding: 6px;
+  align-items: flex-start;
+  border-radius: 44px;
+  background: #eee;
+  
+  @include mobile{
+    overflow-x: auto;
+    max-width:250px;
+  }
+}
+.tab-controls__btn {
+  padding: 7px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  
+
+  color: rgba(31, 31, 31, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 185%;
+
+  transition: background-color 0.2 ease-in;
+
+  &:hover{
+    background-color: rgba(255,255,255,0.6);
+  }
+
+  &--active{
+    background: #fff;
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}
